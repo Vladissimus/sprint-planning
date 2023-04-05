@@ -12,7 +12,6 @@ public class Sprint {
     private final int ticketsLimit1;
 
     public Sprint(int capacity, int ticketsLimit) {
-//        Sprint sprint = new Sprint(capacity,ticketsLimit);
         sprints = new Ticket[ticketsLimit];
         capacity1 = capacity;
         ticketsLimit1 = ticketsLimit;

@@ -10,15 +10,12 @@ public class UserStory extends Ticket {
 
     @Override
     public void complete() {
-        if (dependsOn == null) { //нет зависимостей - завершить
-        this.complete = true;
-        }
-        else {                   //проверка каждой зависимости на завершенность
+//проверка каждой зависимости на завершенность
             for (int i = 0; i < dependsOn.length; i++) {
-                if (dependsOn[i].isCompleted()) continue;
+                if (dependsOn[i].isCompleted()) {
+                }
                else return;
             } this.complete = true;
-        }
     }
 
     public UserStory[] getDependencies() {
